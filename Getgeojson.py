@@ -1,8 +1,11 @@
-import wget
 import geopandas as gpd
 from Getdata import DataPopulation
 import pandas as pd
 import os
+import requests
+
+
+
 
 
 
@@ -16,10 +19,13 @@ def MergingData() -> pd.DataFrame:
     geojson : fichiers contenant des blocs de districts
 
     '''
-    file = "District.geojson"
-    if os.path.exists(file) == False:
-        wget.download("https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/144981/civadmbndaadm1cntig20160527.geojson", "District.geojson")
-  
+    url = "https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/144981/civadmbndaadm1cntig20160527.geojson"
+
+    filegeojson = "District.geojson"
+    if os.path.exists(filegeojson) == False:
+        r = requests.get(url, allow_redirects=True)
+        open(filegeojson, 'wb').write(r.content)
+          
     df = DataPopulation()
     Map = gpd.GeoDataFrame.from_file("District.geojson")
     liste1 = df['Districts']

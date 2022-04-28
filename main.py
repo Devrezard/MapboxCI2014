@@ -1,5 +1,3 @@
-
-from re import A
 from Getgeojson import MergingData
 import sys
 from streamlit import cli as stcli
