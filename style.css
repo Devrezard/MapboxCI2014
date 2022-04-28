@@ -1,0 +1,22 @@
+h2{
+    color: rgb(3, 3, 46);
+}
+.css-ocqkz7 {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    gap: 2rem;
+}
+header{
+    visibility: hidden;
+}
+.css-keje6w {
+    cursor: pointer;
+}
+.autor span:nth-child(2){
+    font-weight: 900;
+    color: #ff4b4b;
+}
