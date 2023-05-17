@@ -1,6 +1,7 @@
 from Getgeojson import MergingData
 import sys
-from streamlit import cli as stcli
+from streamlit.web import cli as stcli
+from streamlit import runtime
 import streamlit
 import plotly.express as px
 from aboutme import Devfolio
@@ -75,7 +76,7 @@ def main():
 # Your streamlit code
 
 if __name__ == '__main__':
-    if streamlit._is_running_with_streamlit:
+    if runtime.exists():
         main()
     else:
         sys.argv = ["streamlit", "run", sys.argv[0]]
