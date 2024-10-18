@@ -8,8 +8,7 @@
   - [Installation](#installation)
 
 ## Information Generale
-Ce projet fut crée dans le cadre de mon acquisions d'experience dans la conception d'application web hebergent des modèle de machine learning. En bref il s'agit d'un projet de map interactif appelant du webscrapping pour l'aquisition de données.
-
+Ce projet a été créé dans le cadre de l'acquisition d'expérience dans la conception d'applications web hébergeant des modèles de machine learning. En bref, il s'agit d'un projet de carte interactive utilisant le web scraping pour l'acquisition de données.
 **Capture d'ecran du projet**
 ![Image](/mapbox.png)
 	
@@ -22,7 +21,7 @@ Le suivant projet à été crée avec la puis des librairies suivante:
 * plotly : 5.7.0
 	
 ## Installation
-Pour l'execution de projet en local, install de python avec pip sont necessaire:
+Pour l'execution du projet en local, installation de python avec pip sont necessaire:
 
 installation des dépendances :
 
